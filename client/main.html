@@ -1,0 +1,40 @@
+<head>
+  <title>meteor-mysql</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> users}}
+
+</body>
+
+<template name="users">
+  <h2>Users list</h2>
+  <table class="users" width="100%" border="1" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>Login</td>
+      <td>Full name</td>
+      <td>Emails</td>
+    </tr>
+    {{#each users}}
+      {{> user}}
+    {{/each}}
+  </table>
+</template>
+
+<template name="user">
+  <tr class="user">
+    <td>{{login}}</td>
+    <td>{{fullName}}</td>
+    <td>{{> emailsArr}}</td>
+  </tr>
+</template>
+
+<template name="emailsArr">
+  <div class="emails-wrap">
+    {{#each email in emailsArr}}
+      <div>{{email}}</div>
+    {{/each}}
+  </div>
+</template>
