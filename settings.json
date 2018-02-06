@@ -1,10 +1,10 @@
 {
   "mysql":{
-    "host"      :   "216.55.176.76",
-    "user"      :   "meteor_test",
-    "password"  :   "QFAZ7xMSWN7xQXkapUoO",
+    "host"      :   "localhost",
+    "user"      :   "root",
+    "password"  :   "",
     "port"      :   "3306",
-    "database"  :   "meteor_test",
+    "database"  :   "test",
     "serverId"  :   "1",
     "minInterval":  "200"
   }
